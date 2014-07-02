@@ -83,6 +83,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+    '/home/web/django/coupons/static/',
+)
+
 TEMPLATE_DIRS = (   
      '/home/web/django/coupons/template',   
 )
